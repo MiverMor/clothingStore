@@ -1,0 +1,68 @@
+.navbar
+  position: fixed
+  top: 0
+  width: 100%
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 31%, rgba(255, 255, 255, 0) 100%)
+  z-index: 100
+  &-top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 10px
+    padding-bottom: 15px
+    margin-right: 40px
+    margin-left: 40px
+
+.nav
+  display: flex
+  justify-content: space-between
+  margin-left: 55px
+  &__links
+    font-weight: 400
+    font-size: 16px
+    text-transform: uppercase
+    text-decoration: none
+    color: $text-color
+    margin-right: 10px
+  &__links:hover
+    border-bottom: 3px solid $primary
+.search
+  display: flex
+  position: relative
+  overflow: hidden
+  border-radius: 5px
+  height: 40px
+  &__input
+    width: 350px
+    height: 100%
+    padding-left: 23px
+    padding-right: 75px
+    background: #f5fafe
+    border: none
+    outline: none
+    font-weight: 400
+    font-size: 18px
+    line-height: 15px
+    color: $text-color
+  &__button
+    position: absolute
+    top: 0
+    right: 0
+    height: 100%
+    width: 65px
+    border: none
+    cursor: pointer
+    background-color: $primary
+.fav
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__user
+    width: 21px
+    &-icon
+      width: 100%
+  &__cart
+    width: 21px
+    margin-left: 20px
+    &-icon
+      width: 100%

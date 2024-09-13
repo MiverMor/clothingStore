@@ -10,13 +10,100 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="navbar">
       <div class="container">
-        
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="img/logo.svg" alt="Logo: NameShop" class="logo__image" />
+          </a>
+
+          <nav class="nav">
+            <a href="#" class="nav__links">Каталог</a>
+            <a href="#" class="nav__links">О нас</a>
+          </nav>
+
+          <form action="#" class="search">
+            <input type="text" class="search__input" placeholder="" />
+            <button class="search__button">
+              <img src="img/icon/search.svg" alt="Icon: search" />
+            </button>
+          </form>
+
+          <div class="fav">
+            <a href="#" class="fav__user">
+              <img
+                src="img/icon/user.svg"
+                alt="Icon: User"
+                class="fav__user-icon"
+              />
+            </a>
+            <a href="#" class="fav__cart">
+              <img
+                src="img/icon/shoppingCart.svg"
+                alt="Icon: cart"
+                class="fav__cart-icon"
+              />
+            </a>
+          </div>
+          <!-- /.fav -->
+        </div>
+        <!-- /.navbar-top -->
       </div>
       <!-- /.container -->
     </header>
+    <section class="banners">
+      <!-- Slider main container -->
+      <div class="swiper banners-slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide banners-slider__item">
+            <img
+              class="banners-slider__image"
+              src="img/bunners/bunner1.jpg"
+              alt="slide"
+            />
+          </div>
+          <div class="swiper-slide banners-slider__item">
+            <img
+              class="banners-slider__image"
+              src="img/bunners/bunner2.jpg"
+              alt="slide"
+            />
+          </div>
+          <div class="swiper-slide banners-slider__item">
+            <img
+              class="banners-slider__image"
+              src="img/bunners/bunner3.jpg"
+              alt="slide"
+            />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <button
+          class="banners-slider__button banners-slider__button--prev"
+        ></button>
+        <button
+          class="banners-slider__button banners-slider__button--next"
+        ></button>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+      <div class="running-line"></div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
