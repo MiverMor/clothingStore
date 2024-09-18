@@ -12,3 +12,29 @@ const bannersSlider = new Swiper('.banners-slider', {
 
 });
 
+var discountsSlider = new Swiper(".discounts-slider", {
+  loop: true,
+  autoplay: {
+    delay: 10000,
+  },
+  slidesPerView: 1,
+  spaceBetween: 10,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 5,
+    },
+  },
+  navigation: {
+    nextEl: '.discounts-slider__button--next',
+    prevEl: '.discounts-slider__button--prev',
+  },
+});

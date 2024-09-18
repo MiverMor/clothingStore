@@ -1,12 +1,34 @@
 *
   box-sizing: border-box
 body
-  font-family: "Montserrat", sans-serif
+  font-family: "Montserrat", serif
   color: $text-color
   background-color: $secondary
+
+@font-face
+  font-family: "Starcatcher"
+  src: url("/fonts/Starcatcher.ttf")
 
 .container
   max-width: 1840px
   margin: auto
 img
   max-width: 100%
+
+.button
+  box-sizing: border-box
+  font-weight: 400
+  text-transform: uppercase
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  border: none
+  border-radius: 5px
+  background-color: #ddd
+  color: #000
+  font-size: 18px
+  cursor: pointer
+  line-height: 1em
+  padding: 5px 10px 3px
+  text-decoration: none !important
+  text-align: center
