@@ -385,14 +385,18 @@ template {
   top: 0;
   width: 100%;
   background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.9) 31%, rgba(255, 255, 255, 0) 100%);
+  transition: background-color 0.3s;
   z-index: 100;
+}
+.navbar__scrolled {
+  background-color: white;
 }
 .navbar-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   margin-right: 40px;
   margin-left: 40px;
 }
@@ -401,6 +405,7 @@ template {
   display: flex;
   justify-content: space-between;
   margin-left: 55px;
+  margin-right: auto;
 }
 .nav__links {
   font-weight: 400;
@@ -420,6 +425,7 @@ template {
   overflow: hidden;
   border-radius: 5px;
   height: 40px;
+  margin-right: 60px;
 }
 .search__input {
   width: 350px;

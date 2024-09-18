@@ -1,3 +1,7 @@
+window.addEventListener('scroll', () => {
+  document.querySelector('.navbar').classList.toggle('navbar__scrolled', window.scrollY > 10);
+});
+
 const bannersSlider = new Swiper('.banners-slider', {
   // Optional parameters
   loop: true,
