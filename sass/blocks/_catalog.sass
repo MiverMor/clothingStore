@@ -1,0 +1,147 @@
+.catalog
+  display: flex
+  flex-flow: column
+  &__hdr
+    display: flex
+    flex-flow: row nowrap
+    align-items: center
+    justify-content: space-between
+    padding: 20px 40px 20px 20px
+  &__title
+    font-size: 20px
+    text-transform: uppercase
+    font-weight: normal
+    margin: 0 10px 0 0
+  &__actions
+    display: flex
+    flex-flow: row nowrap
+    flex-grow: 1
+    align-items: center
+    justify-content: space-between
+  &__switcher
+    margin: 0 20px
+    padding: 10px 5px 10px 5px
+    display: inline-block
+    border: none
+    background-color: transparent
+    cursor: pointer
+    span
+      vertical-align: middle
+      font-size: 14px
+      font-weight: 500
+    img
+      width: 20px
+      vertical-align: middle
+  &__body
+    display: flex
+    flex-flow: row nowrap
+    padding: 0 20px 20px
+    box-sizing: border-box
+    width: 100%
+  &__sidebar, .show
+    width: 30%
+    padding: 20px 20px 20px 0
+    box-sizing: border-box
+    background: #fff
+    max-width: 300px
+    opacity: 1
+  &__sidebar
+    opacity: 0
+    width: 0
+    padding: 0
+    transition: all .2s
+    button[data-close]
+      display: none
+  &__list
+    flex-grow: 1
+    background: #fff
+    width: 70%
+
+.sort
+  position: relative
+  &__label
+    padding: 0 15px 0 0
+    position: relative
+    cursor: pointer
+    &::after
+      content: ""
+      display: block
+      border-right: 1px solid #000
+      border-bottom: 1px solid #000
+      width: 5px
+      height: 5px
+      position: absolute
+      right: 0
+      top: 6px
+      transform: rotate(45deg)
+  &__items
+    position: absolute
+    top: 100%
+    right: 0
+    background: #fff
+    z-index: 100
+    padding: 10px
+    display: flex
+    flex-flow: column
+    transform: scaleY(0)
+    transition: transform 0.1s ease-out
+    transform-origin: top
+  &__item
+    white-space: nowrap
+    margin: 0 0 5px
+    text-align: right
+    text-decoration: none
+    color: #777
+    font-size: 14px
+.sort:hover .sort__label:after, .sort._active .sort__label:after
+  transform: rotate(225deg)
+  top: 7px
+.sort:hover .sort__items, .sort._active .sort__items
+  transform: scaleY(1)
+  transform-origin: top
+.sort__item:hover, .sort__item._active
+  color: #000
+  text-decoration: none
+
+.filter
+  margin-top: 0
+  display: flex
+  flex-flow: column
+  gap: 40px
+  unicode-bidi: isolate
+  &__prop
+    &--title
+      color: #000
+      font-weight: bold
+      font-size: 1.1em
+      margin: 0 0 5px
+
+.checkboxes
+  display: flex
+  flex-flow: column
+  align-items: flex-start
+  label
+    display: flex
+    flex-flow: row nowrap
+    align-items: center
+    position: relative
+    padding: 3px
+    margin-left: -3px
+    cursor: pointer
+    border: 1px solid transparent
+    border-radius: 3px
+    margin: 0 0 5px
+    input[type=checkbox]
+      accent-color: #000
+      margin-right: 5px
+    span
+      font-size: 14px
+      font-weight: 500
+
+.goodlist
+  width: 100%
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-template-rows: 1fr 1fr
+  grid-gap: 30px 10px
+  box-sizing: border-box

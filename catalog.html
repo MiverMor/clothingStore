@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NameShop</title>
+    <title>Каталог</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,7 +25,7 @@
           </a>
 
           <nav class="nav">
-            <a href="catalog.html" class="nav__links">Каталог</a>
+            <a href="catalog.html" class="nav__links nav__current">Каталог</a>
             <a href="#" class="nav__links">О нас</a>
           </nav>
 
@@ -62,7 +62,7 @@
     <section class="catalog-nav">
       <a href="#" class="catalog-nav__item selected">
         <div class="catalog-nav__item--picture selected--picture">
-          <img 
+          <img
             src="img/catalogNav/allCategories.png"
             alt="Img: All categories"
           />
@@ -71,12 +71,9 @@
         <div class="catalog-nav__item--title">Все товары</div>
         <!-- /.catalog-nav__item--title -->
       </a>
-      <a href="#" class="catalog-nav__item ">
+      <a href="#" class="catalog-nav__item">
         <div class="catalog-nav__item--picture selected--picture">
-          <img 
-            src="img/catalogNav/discounts.png"
-            alt="Img: All categories"
-          />
+          <img src="img/catalogNav/discounts.png" alt="Img: All categories" />
         </div>
         <!-- /.catalog-nav__item--picture -->
         <div class="catalog-nav__item--title">Скидки</div>
@@ -84,5 +81,317 @@
       </a>
     </section>
     <!-- /.catalog-nav -->
+
+    <section class="catalog">
+      <div class="catalog__hdr">
+        <h1 class="catalog__title">Каталог</h1>
+        <div class="catalog__actions">
+          <button class="catalog__switcher">
+            <span>Фильтры</span>
+            <img src="img/icon/filter.svg" alt="" />
+          </button>
+
+          <div class="sort">
+            <div class="sort__label">Сор&shy;ти&shy;ро&shy;вать по</div>
+            <!-- /.sort__label -->
+            <div class="sort__items">
+              <a href="#" class="sort__item">По-умолчанию</a>
+              <a href="#" class="sort__item">Цена: высокая-низкая</a>
+              <a href="#" class="sort__item">Цена: низкая-высокая</a>
+            </div>
+            <!-- /.sort__items -->
+          </div>
+          <!-- /.sort -->
+        </div>
+        <!-- /.catalog__actions -->
+      </div>
+      <!-- /.catalog__hdr -->
+
+      <div class="catalog__body">
+        <div class="catalog__sidebar show">
+          <button data-close>
+            <span>x</span>
+          </button>
+          <form action="/catalog/" class="filter" name="catalogFilter_form">
+            <div class="filter__prop">
+              <div class="filter__prop--title">Пол</div>
+              <div class="filter__prop__body">
+                <div class="checkboxes prop_GENDER">
+                  <label>
+                    <input
+                      type="checkbox"
+                      value="Y"
+                      name="catalogFilter_1_1"
+                      id="catalogFilter_1_1"
+                    />
+                    <span>Женский</span>
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      value="Y"
+                      name="catalogFilter_1_2"
+                      id="catalogFilter_1_2"
+                    />
+                    <span>Мужской</span>
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      value="Y"
+                      name="catalogFilter_1_3"
+                      id="catalogFilter_1_3"
+                    />
+                    <span>Унисекс</span>
+                  </label>
+                </div>
+                <!-- /.checkboxes prop_GENDER -->
+              </div>
+              <!-- /.filter__prop__body -->
+            </div>
+            <!-- /.filter__prop -->
+            <div class="filter__prop">
+              <div class="filter__prop--title">Категория</div>
+              <div class="filter__prop__body">
+                <div class="checkboxes prop_PROD_TYPE">
+                  <label>
+                    <input
+                      type="checkbox"
+                      value="Y"
+                      name="catalogFilter_2_1"
+                      id="catalogFilter_2_1"
+                    />
+                    <span>Футболки</span>
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      value="Y"
+                      name="catalogFilter_2_2"
+                      id="catalogFilter_2_2"
+                    />
+                    <span>Худи</span>
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      value="Y"
+                      name="catalogFilter_2_3"
+                      id="catalogFilter_2_3"
+                    />
+                    <span>Брюки</span>
+                  </label>
+                </div>
+                <!-- /.checkboxes prop_PROD_TYPE -->
+              </div>
+              <!-- /.filter__prop__body -->
+            </div>
+            <!-- /.filter__prop -->
+            <div class="filter__prop">
+              <div class="filter__prop--title">Размер</div>
+              <div class="filter__prop__body">
+                <div class="checkboxes prop_SIZES">
+                  <label>
+                    <input
+                      type="checkbox"
+                      value="Y"
+                      name="catalogFilter_3_1"
+                      id="catalogFilter_3_1"
+                    />
+                    <span>S</span>
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      value="Y"
+                      name="catalogFilter_3_2"
+                      id="catalogFilter_3_2"
+                    />
+                    <span>M</span>
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      value="Y"
+                      name="catalogFilter_3_3"
+                      id="catalogFilter_3_3"
+                    />
+                    <span>L</span>
+                  </label>
+                </div>
+                <!-- /.checkboxes prop_SIZE -->
+              </div>
+              <!-- /.filter__prop__body -->
+            </div>
+            <!-- /.filter__prop -->
+          </form>
+        </div>
+        <!-- /.catalog__sidebar -->
+        <div class="catalog__list">
+          <div class="goodlist">
+            <div class="product">
+              <a
+                href="card.html"
+                class="product__link"
+                style="background-image: url(../../img/discounts/dis1.jpg)"
+              >
+                <div class="product__title">Футболка</div>
+                <div class="product__price product-price" product-discount>
+                  <b>2&nbsp;850 RUB</b>
+                </div>
+              </a>
+            </div>
+            <!-- /.product -->
+            <div class="product">
+              <a
+                href="#"
+                class="product__link"
+                style="background-image: url(../../img/discounts/dis1.jpg)"
+              >
+                <div class="product__title">Футболка</div>
+                <div class="product__price" product-discount="5%">
+                  <b>3&nbsp;000 RUB</b>
+                </div>
+              </a>
+            </div>
+            <!-- /.product -->
+            <div class="product">
+              <a
+                href="#"
+                class="product__link"
+                style="background-image: url(../../img/discounts/dis1.jpg)"
+              >
+                <div class="product__title">Футболка</div>
+                <div class="product__price" product-discount>
+                  <b>3&nbsp;000 RUB</b>
+                </div>
+              </a>
+            </div>
+            <!-- /.product -->
+            <div class="product">
+              <a
+                href="#"
+                class="product__link"
+                style="background-image: url(../../img/discounts/dis1.jpg)"
+              >
+                <div class="product__title">Футболка</div>
+                <div class="product__price" product-discount>
+                  <b>3&nbsp;000 RUB</b>
+                </div>
+              </a>
+            </div>
+            <!-- /.product -->
+            <div class="product">
+              <a
+                href="#"
+                class="product__link"
+                style="background-image: url(../../img/discounts/dis1.jpg)"
+              >
+                <div class="product__title">Футболка</div>
+                <div class="product__price" product-discount>
+                  <b>2&nbsp;850 RUB</b>
+                </div>
+              </a>
+            </div>
+            <!-- /.product -->
+            <div class="product">
+              <a
+                href="#"
+                class="product__link"
+                style="background-image: url(../../img/discounts/dis1.jpg)"
+              >
+                <div class="product__title">Футболка</div>
+                <div class="product__price" product-discount="10%">
+                  <b>2&nbsp;850 RUB</b>
+                </div>
+              </a>
+            </div>
+            <!-- /.product -->
+            <div class="product">
+              <a
+                href="#"
+                class="product__link"
+                style="background-image: url(../../img/discounts/dis1.jpg)"
+              >
+                <div class="product__title">Футболка</div>
+                <div class="product__price" product-discount>
+                  <b>2&nbsp;850 RUB</b>
+                </div>
+              </a>
+            </div>
+            <!-- /.product -->
+            <div class="product">
+              <a
+                href="#"
+                class="product__link"
+                style="background-image: url(../../img/discounts/dis1.jpg)"
+              >
+                <div class="product__title">Футболка</div>
+                <div class="product__price" product-discount>
+                  <b>2&nbsp;850 RUB</b>
+                </div>
+              </a>
+            </div>
+            <!-- /.product -->
+          </div>
+          <!-- /.goodlist -->
+          <div class="paginator">
+            <ul class="paginator__item">
+              <li class="paginator__current">
+                <span>1</span>
+              </li>
+              <li>
+                <a href="#">2</a>
+              </li>
+              <li>
+                <a href="#">3</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.paginator -->
+        </div>
+        <!-- /.catalog__list -->
+      </div>
+      <!-- /.catalog__body -->
+    </section>
+    <!-- /.catalog -->
+
+    <footer class="footer">
+      <div class="footer__menu">
+        <ul>
+          <li>
+            <a href="#">Каталог</a>
+          </li>
+          <li>
+            <a href="#">О Нас</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+          <li>
+            <a href="#">Отзывы</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.footer__menu -->
+      <div class="footer__social">
+        <a href="#">
+          <img src="img/icon/telegram.svg" alt="telegram" />
+        </a>
+        <a href="#">
+          <img src="img/icon/instagram.svg" alt="instagram" />
+        </a>
+      </div>
+      <!-- /.footer__cosial -->
+      <div class="footer__logo">NameShop</div>
+      <!-- /.footer__logo -->
+      <div class="footer__author">
+        <a href="#">Website created by MiverMor</a>
+      </div>
+      <!-- /.footer__author -->
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

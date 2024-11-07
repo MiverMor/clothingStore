@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <div class="navbar-top">
+          <a href="index.html" class="logo">
+            <img src="img/logo.svg" alt="Logo: NameShop" class="logo__image" />
+          </a>
+
+          <nav class="nav">
+            <a href="catalog.html" class="nav__links nav__current">Каталог</a>
+            <a href="#" class="nav__links">О нас</a>
+          </nav>
+
+          <form action="#" class="search">
+            <input type="text" class="search__input" placeholder="" />
+            <button class="search__button">
+              <img src="img/icon/search.svg" alt="Icon: search" />
+            </button>
+          </form>
+
+          <div class="fav">
+            <a href="#" class="fav__user">
+              <img
+                src="img/icon/user.svg"
+                alt="Icon: User"
+                class="fav__user-icon"
+              />
+            </a>
+            <a href="#" class="fav__cart">
+              <img
+                src="img/icon/shoppingCart.svg"
+                alt="Icon: cart"
+                class="fav__cart-icon"
+              />
+            </a>
+          </div>
+          <!-- /.fav -->
+        </div>
+        <!-- /.navbar-top -->
+      </div>
+      <!-- /.container -->
+    </header>
+
+    <section class="card-product">
+      <div class="card-product__main">
+        <div class="swiper card-product__slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide card-product__item">
+              <img
+                src="img/discounts/dis1.jpg"
+                alt="Image: product"
+                class="card-product__item--img"
+              />
+            </div>
+            <div class="swiper-slide card-product__item">
+              <img
+                src="img/discounts/dis1.jpg"
+                alt="Image: product"
+                class="card-product__item--img"
+              />
+            </div>
+            <div class="swiper-slide card-product__item">
+              <img
+                src="img/discounts/dis1.jpg"
+                alt="Image: product"
+                class="card-product__item--img"
+              />
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <button
+            class="card-product__button card-product__button--prev"
+          ></button>
+          <button
+            class="card-product__button card-product__button--next"
+          ></button>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar card-product__slider--scrollbar"></div>
+        </div>
+        <!-- /.card-product__slider -->
+
+        <div class="card-product__details">
+          <h1 class="card-product__title">
+            <span>Футболка</span>
+            
+          </h1>
+          <div class="card-product__offer">
+            <div class="card-product__price product__price" product-discount="15%">
+              <b>2&nbsp;850 RUB</b>
+            </div>
+            <!-- /.card-product__price -->
+
+            <div class="skuprops">
+              <div class="skuprops__title">
+                <span>Размер</span>
+                <u>Определить размер</u>
+              </div>
+              <!-- /.skuprops__title -->
+              <div class="skuprops__values">
+                <div class="skuprops__btn">S</div>
+                <div class="skuprops__btn">M</div>
+                <div class="skuprops__btn">L</div>
+              </div>
+              <!-- /.skuprops__values -->
+            </div>
+            <!-- /.skuprops -->
+            <div class="card-product__select color-select">
+              <ul class="color-select__list">
+                <li class="color-select__item">
+                  <button
+                    class="color-select__btn btn-reset color-select__btn--active"
+                    data-color="black"
+                    style="background-color: black"
+                  ></button>
+                </li>
+                <li class="color-select__item">
+                  <button
+                    class="color-select__btn btn-reset"
+                    data-color="white"
+                    style="background-color: white"
+                  ></button>
+                </li>
+                <li class="color-select__item">
+                  <button
+                    class="color-select__btn btn-reset"
+                    data-color="red"
+                    style="background-color: red"
+                  ></button>
+                </li>
+                <li class="color-select__item">
+                  <button
+                    class="color-select__btn btn-reset"
+                    data-color="green"
+                    style="background-color: green"
+                  ></button>
+                </li>
+                <li class="color-select__item">
+                  <button
+                    class="color-select__btn btn-reset"
+                    data-color="yellow"
+                    style="background-color: yellow"
+                  ></button>
+                </li>
+              </ul>
+            </div>
+            <!-- /.card-product__color -->
+            <div class="card-product__actions">
+              <button class="button card-product__actions--btn">
+                В корзину
+              </button>
+            </div>
+            <!-- /.card-product__actions -->
+          </div>
+          <!-- /.card-product__offer -->
+          <div class="card-product__info">
+            <h3>Описание</h3>
+            <p>
+              Черное оверсайз худи для мальчиков и девочек с принтом “Влад А4”
+              на груди.<br /><br /><b>Комфортная посадка</b><br />Свободный крой
+              и спущенные рукава не сковывают движения. В боковые карманы легко
+              поместятся телефон, ключи и другие мелочи. Отлично подходит для
+              активных детей.<br /><br /><b>Натуральные материалы</b><br />В
+              составе ткани 80% хлопка. Это делает худи мягкой на ощупь и
+              дышашей. Ткань гипоаллергенна и за ней легко ухаживать.<br /><br /><b
+                >Защита от непогоды</b
+              ><br />Мягкий футер 3-нитка, из которого сделана худи, надежно
+              сохранит тепло в ветренную погоду. А свободный капюшон легко
+              заменит забытую шапку.<br /><br />На Фаддее размер 5XS при росте
+              142 см.<br />На Маргарите размер 5XS при росте 143 см.<br /><br />
+            </p>
+          </div>
+          <!-- /.card-product__info -->
+        </div>
+        <!-- /.card-product__details -->
+      </div>
+      <!-- /.card-product__main -->
+    </section>
+    <div class="goback">
+      <a href="javascript:history.go(-1)" class="goback--link"
+        >Вернуться назад</a
+      >
+    </div>
+    <!-- /.goback -->
+    <footer class="footer">
+      <div class="footer__menu">
+        <ul>
+          <li>
+            <a href="#">Каталог</a>
+          </li>
+          <li>
+            <a href="#">О Нас</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+          <li>
+            <a href="#">Отзывы</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.footer__menu -->
+      <div class="footer__social">
+        <a href="#">
+          <img src="img/icon/telegram.svg" alt="telegram" />
+        </a>
+        <a href="#">
+          <img src="img/icon/instagram.svg" alt="instagram" />
+        </a>
+      </div>
+      <!-- /.footer__cosial -->
+      <div class="footer__logo">NameShop</div>
+      <!-- /.footer__logo -->
+      <div class="footer__author">
+        <a href="#">Website created by MiverMor</a>
+      </div>
+      <!-- /.footer__author -->
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

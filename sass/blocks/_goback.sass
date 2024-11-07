@@ -1,0 +1,25 @@
+.goback
+  display: flex
+  flex-flow: row
+  align-items: center
+  justify-content: center
+  margin: 60px 0 100px
+  a
+    font-weight: bold
+    font-size: 16px
+    text-transform: uppercase
+    text-decoration: none
+    display: inline-block
+    white-space: nowrap
+    position: relative
+    cursor: pointer
+    color: $text-color
+    &::after
+      position: absolute
+      content: ""
+      display: block
+      border-bottom: 2px solid #000
+      height: 0
+      width: 100%
+      bottom: 0
+      left: 0
