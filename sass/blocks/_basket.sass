@@ -1,0 +1,76 @@
+.basket
+  width: 80%
+  display: flex
+  flex-flow: column
+  margin: 75px auto 40px auto
+  gap: 10px
+  &__title
+    color: $text-color
+    font-weight: 500
+    font-size: 32px
+
+.cart
+  display: flex
+  flex-flow: column
+  gap: 20px
+  width: 80%
+  &__product
+    border: 2px solid $text-color
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 20px
+    position: relative
+  &__img
+    margin: 0
+    padding: 0
+    img
+      width: 100px
+  &__info
+    display: flex
+    flex-flow: column
+    gap: 10px
+  &__price
+    display: flex
+    flex-flow: column
+    font-weight: 500
+  &__block-btns
+    width: 15%
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__minus, &__plus
+    border: 1px solid black
+    width: 40px
+    text-align: center
+    font-weight: 500
+    font-size: 24px
+  &__count
+    font-weight: 500
+    font-size: 24px
+  &__del-card
+    position: absolute
+    top: 10px
+    right: 10px
+    width: 30px
+    height: 30px
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 24px
+    color: black
+    font-weight: bold
+    cursor: pointer
+    &:hover
+      color: red
+
+.btn-send
+  color: #fff
+  background-color: #000
+  line-height: 1em
+  font-weight: 500
+  font-size: 36px
+  padding: 9px 20px 5px
+  width: 40%
+  &:hover
+    opacity: 0.7

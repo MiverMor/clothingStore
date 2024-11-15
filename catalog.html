@@ -15,6 +15,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/catalog.js" type="module" defer></script>
   </head>
   <body>
     <header class="navbar">
@@ -44,12 +45,13 @@
                 class="fav__user-icon"
               />
             </a>
-            <a href="#" class="fav__cart">
+            <a href="basket.html" class="fav__cart">
               <img
                 src="img/icon/shoppingCart.svg"
                 alt="Icon: cart"
                 class="fav__cart-icon"
               />
+              <span class="fav__cart--count">0</span>
             </a>
           </div>
           <!-- /.fav -->
@@ -229,7 +231,7 @@
         <!-- /.catalog__sidebar -->
         <div class="catalog__list">
           <div class="goodlist">
-            <div class="product">
+            <!-- <div class="product">
               <a
                 href="card.html"
                 class="product__link"
@@ -240,9 +242,9 @@
                   <b>2&nbsp;850 RUB</b>
                 </div>
               </a>
-            </div>
+            </div> -->
             <!-- /.product -->
-            <div class="product">
+            <!-- <div class="product">
               <a
                 href="#"
                 class="product__link"
@@ -253,9 +255,9 @@
                   <b>3&nbsp;000 RUB</b>
                 </div>
               </a>
-            </div>
+            </div> -->
             <!-- /.product -->
-            <div class="product">
+            <!-- <div class="product">
               <a
                 href="#"
                 class="product__link"
@@ -266,9 +268,9 @@
                   <b>3&nbsp;000 RUB</b>
                 </div>
               </a>
-            </div>
+            </div> -->
             <!-- /.product -->
-            <div class="product">
+            <!-- <div class="product">
               <a
                 href="#"
                 class="product__link"
@@ -279,9 +281,9 @@
                   <b>3&nbsp;000 RUB</b>
                 </div>
               </a>
-            </div>
+            </div> -->
             <!-- /.product -->
-            <div class="product">
+            <!-- <div class="product">
               <a
                 href="#"
                 class="product__link"
@@ -292,9 +294,9 @@
                   <b>2&nbsp;850 RUB</b>
                 </div>
               </a>
-            </div>
+            </div> -->
             <!-- /.product -->
-            <div class="product">
+            <!-- <div class="product">
               <a
                 href="#"
                 class="product__link"
@@ -305,9 +307,9 @@
                   <b>2&nbsp;850 RUB</b>
                 </div>
               </a>
-            </div>
+            </div> -->
             <!-- /.product -->
-            <div class="product">
+            <!-- <div class="product">
               <a
                 href="#"
                 class="product__link"
@@ -318,9 +320,9 @@
                   <b>2&nbsp;850 RUB</b>
                 </div>
               </a>
-            </div>
+            </div> -->
             <!-- /.product -->
-            <div class="product">
+            <!-- <div class="product">
               <a
                 href="#"
                 class="product__link"
@@ -331,11 +333,12 @@
                   <b>2&nbsp;850 RUB</b>
                 </div>
               </a>
-            </div>
+            </div> -->
             <!-- /.product -->
           </div>
           <!-- /.goodlist -->
           <div class="paginator">
+            <button class="paginator__show none">Показать еще</button>
             <ul class="paginator__item">
               <li class="paginator__current">
                 <span>1</span>
